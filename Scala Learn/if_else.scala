@@ -1,17 +1,21 @@
+// import breeze.linalg.DenseVector
+// import com.github.fommil.netlib.BLAS
+// import org.slf4j.LoggerFactory
 object Demo {
-    def main(Array: ary[String]): Unit = {
+    def loop(j: Int): Unit = {
+        for (i <- 1 to j) println(i)
+        var i = 1
+        while (i <= 5) {
+            println(s"$i\n")
+            i += 1
+        }
+    }
+
+    def main(ar: Array[String]): Unit = {
         val x : Int = 20 
         if(x == 20){
             println(s"pEACA")
         }
+        loop(20)
     }
 }
-
-// object Demo {
-//     def main(args: Array[String]): Unit = {  // Corrected method signature
-//         val x: Int = 20
-//         if (x == 20) {                         // Proper spacing and indentation
-//             println("s")                // Corrected typo
-//         }
-//     }
-// }
